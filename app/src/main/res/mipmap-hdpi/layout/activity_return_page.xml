@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/ic_media_rew" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_toEndOf="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/back">
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/pemail"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/back"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Publisher name :" />
+
+        <TextView
+            android:id="@+id/pemail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/paddress"
+            android:layout_alignStart="@+id/bid"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Publisher Email :" />
+
+        <TextView
+            android:id="@+id/paddress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/cname"
+            android:layout_alignStart="@+id/npages"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Publisher Address :" />
+
+        <TextView
+            android:id="@+id/aname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/npages"
+            android:layout_alignStart="@+id/npages"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Author's name :" />
+
+        <TextView
+            android:id="@+id/pyear"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/available"
+            android:layout_alignStart="@+id/available"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Published Year : " />
+
+        <TextView
+            android:id="@+id/npages"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/pname"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/back"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Number Of Pages :" />
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Category Name :"
+            android:layout_above="@+id/pyear"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:id="@+id/bid"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="33dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Book ID :"
+            android:layout_above="@+id/aname"
+            android:layout_alignStart="@+id/cname"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:text="Is late"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/late" />
+
+        <TextView
+            android:text="End Borrowed Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edate" />
+
+        <TextView
+            android:text="Start Borrowed Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdate" />
+
+        <TextView
+            android:id="@+id/btitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffe8e8"
+            android:gravity="center_vertical"
+            android:text="Book Title :"
+            android:layout_above="@+id/bid"
+            android:layout_alignStart="@+id/bid"
+            android:layout_marginBottom="11dp" />
+    </LinearLayout>
+
+    <Button
+        android:text="Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/returnn" />
+
+
+</RelativeLayout>

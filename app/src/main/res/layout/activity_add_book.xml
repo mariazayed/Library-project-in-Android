@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first">
+
+    <Button
+        android:text="Add Book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/add_book" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/ic_media_rew" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_above="@+id/add_book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/book_title"
+            android:hint="Book Title"
+            android:background="#fed583"
+            android:layout_above="@+id/book_id"
+            android:layout_alignStart="@+id/book_id"
+            android:layout_marginBottom="31dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/book_id"
+            android:hint="Book ID "
+            android:background="#fed583"
+            android:layout_above="@+id/n_of_pages"
+            android:layout_alignStart="@+id/n_of_pages"
+            android:layout_marginBottom="31dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/n_of_pages"
+            android:hint="Number Of pages"
+            android:background="#fed583"
+            android:layout_marginBottom="31dp"
+            android:layout_above="@+id/author_name"
+            android:layout_alignStart="@+id/author_name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/author_name"
+            android:hint="Author name"
+            android:background="#fed583"
+            android:layout_marginBottom="31dp"
+            android:layout_above="@+id/publisher_name"
+            android:layout_alignStart="@+id/publisher_name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/publisher_name"
+            android:hint="Publisher name"
+            android:background="#fed583"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="31dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/category_name"
+            android:hint="Category name"
+            android:background="#fed583"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/pyear"
+            android:hint="Published Year"
+            android:background="#fed583"
+            android:layout_above="@+id/add_book"
+            android:layout_alignStart="@+id/category_name" />
+    </LinearLayout>
+</RelativeLayout>

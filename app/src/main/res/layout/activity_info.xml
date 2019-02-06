@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sixth"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/ic_media_rew" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User Name :" />
+
+        <TextView
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/user_address"
+            android:layout_below="@+id/user_address"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User Password :" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/user_password"
+            android:layout_below="@+id/user_password"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User Email :" />
+
+        <TextView
+            android:id="@+id/user_gender"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/user_email"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User Gender" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/user_email"
+            android:layout_below="@+id/user_gender"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="Date Of Birth :" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/start_date"
+            android:layout_below="@+id/start_date"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="End Date :" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User ID :" />
+
+        <TextView
+            android:id="@+id/user_address"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_below="@+id/user_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="User Address :" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/user_email"
+            android:layout_below="@+id/dob"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#dfc9ae"
+            android:text="Start Date :" />
+    </LinearLayout>
+
+</RelativeLayout>
